@@ -1,0 +1,40 @@
+{
+  "name": "seven-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veberb/Seven-apps.git"
+  },
+  "author": "Lucas Veber de Brida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veberb/Seven-apps/issues"
+  },
+  "homepage": "https://github.com/Veberb/Seven-apps#readme",
+  "dependencies": {
+    "apollo-server": "^2.16.1",
+    "apollo-server-express": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.1.1",
+    "mongodb-memory-server": "^6.6.3"
+  }
+}
