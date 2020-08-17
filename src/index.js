@@ -1,7 +1,8 @@
 const { ApolloServer } = require('apollo-server-express');
 const express = require('express');
 
-require('./database');
+// eslint-disable-next-line global-require
+if (process.env.NODE_ENV !== 'test') require('./database');
 
 const app = express();
 
