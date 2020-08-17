@@ -20,6 +20,10 @@
 
   - Após rodar o comando, o [Server](http://localhost:4000/graphql) ficará disponível
 
-* ## Melhorias futuras:
+* ## Testes
+
+  - Projeto conta com alguns testes, executar o comando `yarn test` na raiz do projeto
+
+- ## Melhorias futuras:
 
   - Adicionar login e filtrar consultas com base no usuário logado
