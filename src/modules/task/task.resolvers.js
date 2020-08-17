@@ -6,7 +6,11 @@ const resolvers = {
       return new Task({ ...task }).save();
     },
     updateTask: async (parent, { task, id }) => {
-      return Task.findByIdAndUpdate(id, { $set: { ...task } }, { new: true });
+      return Task.findByIdAndUpdate(
+        id,
+        { $set: { ...task } },
+        { new: true, runValidators: true }
+      );
     },
 
     deleteTask: async (parent, { id }) => {

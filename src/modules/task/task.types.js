@@ -8,8 +8,8 @@ const typeDefs = gql`
   }
 
   input TaskInput {
-    title: String!
-    description: String!
+    title: String
+    description: String
     status: String
     user: String
   }
