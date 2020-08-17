@@ -9,6 +9,12 @@ const typeDefs = gql`
 
   extend type Query {
     getTask(id: String!): Task
+    listTasks(task: TaskInput, offset: Int, limit: Int): TaskPagination
+  }
+
+  type TaskPagination {
+    tasks: [Task]
+    totalTasks: Int
   }
 
   input TaskInput {
