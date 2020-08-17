@@ -3,6 +3,9 @@ const { gql } = require('apollo-server');
 const UserResolver = require('../modules/user/user.resolvers');
 const UserTypes = require('../modules/user/user.types');
 
+const TaskResolver = require('../modules/task/task.resolvers');
+const TaskTypes = require('../modules/task/task.types');
+
 const linkSchema = gql`
   type Query {
     _: Boolean
@@ -13,6 +16,6 @@ const linkSchema = gql`
 `;
 
 module.exports = {
-  typeDefs: [linkSchema, UserTypes],
-  resolvers: [UserResolver],
+  typeDefs: [linkSchema, UserTypes, TaskTypes],
+  resolvers: [UserResolver, TaskResolver],
 };
