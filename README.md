@@ -27,3 +27,4 @@
 - ## Melhorias futuras:
 
   - Adicionar login e filtrar consultas com base no usuário logado
+  - Typescript :D
