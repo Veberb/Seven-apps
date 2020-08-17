@@ -28,7 +28,7 @@ const resolvers = {
     createUser: async (parent, { user }) => {
       const foundUser = await User.countDocuments({ name: user.name });
       if (foundUser)
-        throw new UserInputError('Já existe um usuário com o email informado');
+        throw new UserInputError('Já existe um usuário com o nome informado');
 
       return new User({ ...user }).save();
     },
