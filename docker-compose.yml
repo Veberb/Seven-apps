@@ -1,0 +1,17 @@
+version: '3'
+services:
+  server:
+    build:
+      dockerfile: 'Dockerfile'
+      context: './'
+    image: 'server-seven-apps'
+    ports:
+      - '4000:4000'
+    environment:
+      MONGODB_URI: 'mongodb://mongo:27017/seven-apps'
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
