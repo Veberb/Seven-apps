@@ -5,6 +5,9 @@ const resolvers = {
     createTask: async (parent, { task }) => {
       return new Task({ ...task }).save();
     },
+    deleteTask: async (parent, { id }) => {
+      return Task.findByIdAndDelete(id);
+    },
   },
 };
 

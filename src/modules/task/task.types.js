@@ -3,6 +3,7 @@ const { gql } = require('apollo-server');
 const typeDefs = gql`
   extend type Mutation {
     createTask(task: TaskInput!): Task!
+    deleteTask(id: String!): Task!
   }
 
   input TaskInput {
