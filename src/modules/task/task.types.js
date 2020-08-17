@@ -7,6 +7,10 @@ const typeDefs = gql`
     deleteTask(id: String!): Task!
   }
 
+  extend type Query {
+    getTask(id: String!): Task
+  }
+
   input TaskInput {
     title: String
     description: String
